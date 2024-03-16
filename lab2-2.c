@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main()
 {
-
     printf("----- 2021041069 조형준 -----\n");
     int i;
     int *ptr;
@@ -43,7 +42,7 @@ int main()
     printf("value of **dptr == %d\n", **dptr);        // dptr의 이중 참조 또한 위에서 서술했듯 i의 값이므로 따라서 (7777) 출력.
     **dptr = 8888; /* changing the value of **dptr */ //**dptr이 참조하는 값이 8888로 변경.
     printf("\n[after **dptr = 8888] \n");
-    printf("value of i == %d\n", i); // dptr=&ptr, *dptr=*&ptr=ptr=&i 이므로 따라서 **dptr=i가 성립됨.
+    printf("value of i == %d\n", i); // dptr=&ptr, *dptr=*&ptr=ptr=&i 이므로 따라서 **dptr=i가 성립.
     // 그러므로 변경된 i의 값인 8888이 출력.
     printf("value of *ptr == %d\n", *ptr);     // 위와 같은 이유로 *ptr=i이므로 i의 값인 8888 출력.
     printf("value of **dptr == %d\n", **dptr); // 위와 같은 이유로 i의 값인 8888이 출력.

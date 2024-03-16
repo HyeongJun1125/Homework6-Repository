@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main()
 {
+
     printf("----- 2021041069 Á¶ÇüÁØ -----\n");
     int i;
     int *ptr;

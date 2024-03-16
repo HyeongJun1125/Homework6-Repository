@@ -44,7 +44,7 @@ int main()
     printf("\n[after **dptr = 8888] \n");
     printf("value of i == %d\n", i); // dptr=&ptr, *dptr=*&ptr=ptr=&i 이므로 따라서 **dptr=i가 성립.
     // 그러므로 변경된 i의 값인 8888이 출력.
-    printf("value of *ptr == %d\n", *ptr);     // 위와 같은 이유로 *ptr=i이므로 i의 값인 8888 출력.
-    printf("value of **dptr == %d\n", **dptr); // 위와 같은 이유로 i의 값인 8888이 출력.
+    printf("value of *ptr == %d\n", *ptr);       // 위와 같은 이유로 *ptr=i이므로 i의 값인 8888 출력.
+    printf("value of **dptr == %d\n\n", **dptr); // 위와 같은 이유로 i의 값인 8888이 출력.
     return 0;
 }
